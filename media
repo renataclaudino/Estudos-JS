@@ -1,0 +1,16 @@
+function mediaAluno() {
+    let nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+    let nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+
+    let media = (nota1 + nota2) / 2;
+
+    if (media >= 8 && media <= 10) {
+        alert("Aprovado!");
+    } else if (media >= 5 && media < 8) {
+        alert("Recuperação!");
+    } else if (media >= 0 && media < 5) {
+        alert("Reprovado!");
+    } else {
+        alert("Nota inválida. Digite valores entre 0 e 10!");
+    }
+}
